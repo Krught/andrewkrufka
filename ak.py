@@ -230,25 +230,25 @@ def all_dash_stuff():
     status_table_data['DPSPA'] = status_table_data["All_Damage"].apply(lambda x: x / fight_length)
     status_table_data = status_table_data.round({'DPSPA': 3})
 
-    dps_timeline_breaks = int(fight_length / 3)
-    time_each_break = fight_length / dps_timeline_breaks
-    time_breaks = []
-    timeline_dps_list = []
-    for times in range(0, dps_timeline_breaks):
-        times += 1
-        timeline_current_time = times * time_each_break
-        time_breaks.append(times * time_each_break)
-        timeline_dps_num = []
-        for timeline_time_position, timeline_time in enumerate(timeline_order):
-            if timeline_time < timeline_current_time:
-                timeline_dps_num.append(timeline_time_position)
-        timeline_damage_list = []
-        for timeline_damage in timeline_dps_num:
-            timeline_damage_list.append(damage_order[timeline_damage])
-        timeline_damage = sum(timeline_damage_list)
-        timeline_dps = timeline_damage / timeline_current_time
-        timeline_dps_list.append(timeline_dps)
-    dps_table_data = pd.DataFrame(dict(DPS=timeline_dps_list, Time=time_breaks))
+    # dps_timeline_breaks = int(fight_length / 3)
+    # time_each_break = fight_length / dps_timeline_breaks
+    # time_breaks = []
+    # timeline_dps_list = []
+    # for times in range(0, dps_timeline_breaks):
+    #     times += 1
+    #     timeline_current_time = times * time_each_break
+    #     time_breaks.append(times * time_each_break)
+    #     timeline_dps_num = []
+    #     for timeline_time_position, timeline_time in enumerate(timeline_order):
+    #         if timeline_time < timeline_current_time:
+    #             timeline_dps_num.append(timeline_time_position)
+    #     timeline_damage_list = []
+    #     for timeline_damage in timeline_dps_num:
+    #         timeline_damage_list.append(damage_order[timeline_damage])
+    #     timeline_damage = sum(timeline_damage_list)
+    #     timeline_dps = timeline_damage / timeline_current_time
+    #     timeline_dps_list.append(timeline_dps)
+    # dps_table_data = pd.DataFrame(dict(DPS=timeline_dps_list, Time=time_breaks))
 
 
 
