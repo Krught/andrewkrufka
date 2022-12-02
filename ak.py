@@ -311,10 +311,10 @@ def all_dash_stuff():
                             linecolor="#BCCCDC",
                             showgrid=False,
                             ))
-    t_dps = fight_length
-    total_damage = round(sum(damage_order), 3)
-    total_dps = round((t_damage / t_dps), 3)
-    total_damage = "Total Damage Done - " + str(total_damage) + "                  DPS - " + str(total_dps) + "                  Fight Length - " + str(fight_length) + "                  Number of Targets - " + str(number_of_targets_in_fight)
+    # t_dps = fight_length
+    # total_damage = round(sum(damage_order), 3)
+    # total_dps = round((t_damage / t_dps), 3)
+    # total_damage = "Total Damage Done - " + str(total_damage) + "                  DPS - " + str(total_dps) + "                  Fight Length - " + str(fight_length) + "                  Number of Targets - " + str(number_of_targets_in_fight)
     fig.update_layout(
         hoverlabel=dict(
             font_size=12,
@@ -323,7 +323,7 @@ def all_dash_stuff():
     )
     all_data_no_zero = all_data.copy()
     all_data_no_zero = all_data_no_zero[all_data_no_zero.Damage != 0]
-    fig3 = px.treemap(all_data, path=[px.Constant("All Damage"),'Ability', 'Status'], values='Damage',title=total_damage ,color="Ability",color_discrete_map=colors, template="plotly_dark")
+    fig3 = px.treemap(all_data, path=[px.Constant("All Damage"),'Ability', 'Status'], values='Damage',color="Ability",color_discrete_map=colors, template="plotly_dark")
 
     fig3.update_layout(
         hoverlabel=dict(
