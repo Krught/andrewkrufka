@@ -1,0 +1,15 @@
+*.pyc
+__pycache__
+.cache
+.ipython
+.local
+.virtualenvs
+.DS_Store
+.bashrc
+.gitconfig
+.my.cnf
+.profile
+.pythonstartup.py
+.vimrc
+README.txt
+sample.db
