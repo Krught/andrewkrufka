@@ -191,44 +191,44 @@ def all_dash_stuff():
         unique_damage_per_cast_df_table.append(round((sum(search_data['Damage'])) / len(search_data['Damage']), 4))
         unique_damage_df_table.append(round(sum(search_data['Damage']), 4))
         unique_ability_df_table.append(i)
-    status_table_data = pd.DataFrame(dict(Ability=unique_ability_df_table, Miss=unique_miss_count_df_table, Dodge=unique_dodge_count_df_table, Parry=unique_parry_count_df_table, Glance=unique_glance_count_df_table, Block=unique_block_count_df_table, Crit=unique_crit_count_df_table, Hit=unique_hit_count_df_table, DOT=unique_dot_count_df_table, Active=unique_active_count_df_table, Proc=unique_proc_count_df_table, Avg_Damage=unique_damage_per_cast_df_table, All_Damage=unique_damage_df_table))
+ #   status_table_data = pd.DataFrame(dict(Ability=unique_ability_df_table, Miss=unique_miss_count_df_table, Dodge=unique_dodge_count_df_table, Parry=unique_parry_count_df_table, Glance=unique_glance_count_df_table, Block=unique_block_count_df_table, Crit=unique_crit_count_df_table, Hit=unique_hit_count_df_table, DOT=unique_dot_count_df_table, Active=unique_active_count_df_table, Proc=unique_proc_count_df_table, Avg_Damage=unique_damage_per_cast_df_table, All_Damage=unique_damage_df_table))
 
 
-    statuss_sum_list = ["Miss", "Dodge", "Parry", "Glance", "Block", "Crit", "Hit", "DOT", "Active", "Proc"]
-    status_table_data['Sum'] = status_table_data[statuss_sum_list].sum(axis=1)
-    status_table_data['MissP'] = status_table_data["Miss"]/status_table_data["Sum"]
-    status_table_data['DodgeP'] = status_table_data["Dodge"]/status_table_data["Sum"]
-    status_table_data['ParryP'] = status_table_data["Parry"]/status_table_data["Sum"]
-    status_table_data['GlanceP'] = status_table_data["Glance"]/status_table_data["Sum"]
-    status_table_data['BlockP'] = status_table_data["Block"]/status_table_data["Sum"]
-    status_table_data['CritP'] = status_table_data["Crit"]/status_table_data["Sum"]
-    status_table_data['HitP'] = status_table_data["Hit"]/status_table_data["Sum"]
-    status_table_data['DOTP'] = status_table_data["DOT"]/status_table_data["Sum"]
-    status_table_data['ActiveP'] = status_table_data["Active"]/status_table_data["Sum"]
-    status_table_data['ProcP'] = status_table_data["Proc"]/status_table_data["Sum"]
-    status_table_data['MissP'] = status_table_data['MissP'].apply(lambda x: x * 100)
-    status_table_data['DodgeP'] = status_table_data['DodgeP'].apply(lambda x: x * 100)
-    status_table_data['ParryP'] = status_table_data['ParryP'].apply(lambda x: x * 100)
-    status_table_data['GlanceP'] = status_table_data['GlanceP'].apply(lambda x: x * 100)
-    status_table_data['BlockP'] = status_table_data['BlockP'].apply(lambda x: x * 100)
-    status_table_data['CritP'] = status_table_data['CritP'].apply(lambda x: x * 100)
-    status_table_data['HitP'] = status_table_data['HitP'].apply(lambda x: x * 100)
-    status_table_data['DOTP'] = status_table_data['DOTP'].apply(lambda x: x * 100)
-    status_table_data['ActiveP'] = status_table_data['ActiveP'].apply(lambda x: x * 100)
-    status_table_data['ProcP'] = status_table_data['ProcP'].apply(lambda x: x * 100)
-    status_table_data = status_table_data.round({'MissP': 2, 'DodgeP': 2, 'ParryP': 2, 'GlanceP': 2, 'BlockP': 2, 'CritP': 2, 'HitP': 2, 'DOTP': 2, 'ActiveP': 2, 'ProcP': 2})
-    status_table_data['MissP'] = status_table_data['MissP'].astype(str) + '%'
-    status_table_data['DodgeP'] = status_table_data['DodgeP'].astype(str) + '%'
-    status_table_data['ParryP'] = status_table_data['ParryP'].astype(str) + '%'
-    status_table_data['GlanceP'] = status_table_data['GlanceP'].astype(str) + '%'
-    status_table_data['BlockP'] = status_table_data['BlockP'].astype(str) + '%'
-    status_table_data['CritP'] = status_table_data['CritP'].astype(str) + '%'
-    status_table_data['HitP'] = status_table_data['HitP'].astype(str) + '%'
-    status_table_data['DOTP'] = status_table_data['DOTP'].astype(str) + '%'
-    status_table_data['ActiveP'] = status_table_data['ActiveP'].astype(str) + '%'
-    status_table_data['ProcP'] = status_table_data['ProcP'].astype(str) + '%'
-    status_table_data['DPSPA'] = status_table_data["All_Damage"].apply(lambda x: x / fight_length)
-    status_table_data = status_table_data.round({'DPSPA': 3})
+    # statuss_sum_list = ["Miss", "Dodge", "Parry", "Glance", "Block", "Crit", "Hit", "DOT", "Active", "Proc"]
+    # status_table_data['Sum'] = status_table_data[statuss_sum_list].sum(axis=1)
+    # status_table_data['MissP'] = status_table_data["Miss"]/status_table_data["Sum"]
+    # status_table_data['DodgeP'] = status_table_data["Dodge"]/status_table_data["Sum"]
+    # status_table_data['ParryP'] = status_table_data["Parry"]/status_table_data["Sum"]
+    # status_table_data['GlanceP'] = status_table_data["Glance"]/status_table_data["Sum"]
+    # status_table_data['BlockP'] = status_table_data["Block"]/status_table_data["Sum"]
+    # status_table_data['CritP'] = status_table_data["Crit"]/status_table_data["Sum"]
+    # status_table_data['HitP'] = status_table_data["Hit"]/status_table_data["Sum"]
+    # status_table_data['DOTP'] = status_table_data["DOT"]/status_table_data["Sum"]
+    # status_table_data['ActiveP'] = status_table_data["Active"]/status_table_data["Sum"]
+    # status_table_data['ProcP'] = status_table_data["Proc"]/status_table_data["Sum"]
+    # status_table_data['MissP'] = status_table_data['MissP'].apply(lambda x: x * 100)
+    # status_table_data['DodgeP'] = status_table_data['DodgeP'].apply(lambda x: x * 100)
+    # status_table_data['ParryP'] = status_table_data['ParryP'].apply(lambda x: x * 100)
+    # status_table_data['GlanceP'] = status_table_data['GlanceP'].apply(lambda x: x * 100)
+    # status_table_data['BlockP'] = status_table_data['BlockP'].apply(lambda x: x * 100)
+    # status_table_data['CritP'] = status_table_data['CritP'].apply(lambda x: x * 100)
+    # status_table_data['HitP'] = status_table_data['HitP'].apply(lambda x: x * 100)
+    # status_table_data['DOTP'] = status_table_data['DOTP'].apply(lambda x: x * 100)
+    # status_table_data['ActiveP'] = status_table_data['ActiveP'].apply(lambda x: x * 100)
+    # status_table_data['ProcP'] = status_table_data['ProcP'].apply(lambda x: x * 100)
+    # status_table_data = status_table_data.round({'MissP': 2, 'DodgeP': 2, 'ParryP': 2, 'GlanceP': 2, 'BlockP': 2, 'CritP': 2, 'HitP': 2, 'DOTP': 2, 'ActiveP': 2, 'ProcP': 2})
+    # status_table_data['MissP'] = status_table_data['MissP'].astype(str) + '%'
+    # status_table_data['DodgeP'] = status_table_data['DodgeP'].astype(str) + '%'
+    # status_table_data['ParryP'] = status_table_data['ParryP'].astype(str) + '%'
+    # status_table_data['GlanceP'] = status_table_data['GlanceP'].astype(str) + '%'
+    # status_table_data['BlockP'] = status_table_data['BlockP'].astype(str) + '%'
+    # status_table_data['CritP'] = status_table_data['CritP'].astype(str) + '%'
+    # status_table_data['HitP'] = status_table_data['HitP'].astype(str) + '%'
+    # status_table_data['DOTP'] = status_table_data['DOTP'].astype(str) + '%'
+    # status_table_data['ActiveP'] = status_table_data['ActiveP'].astype(str) + '%'
+    # status_table_data['ProcP'] = status_table_data['ProcP'].astype(str) + '%'
+    # status_table_data['DPSPA'] = status_table_data["All_Damage"].apply(lambda x: x / fight_length)
+    # status_table_data = status_table_data.round({'DPSPA': 3})
 
     # dps_timeline_breaks = int(fight_length / 3)
     # time_each_break = fight_length / dps_timeline_breaks
