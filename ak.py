@@ -44,36 +44,9 @@ def all_dash_stuff():
     data_sta = ['Glance', 'Active', 'Miss', 'Crit', 'Hit', 'Glance', 'DOT', 'Hit', 'Crit', 'Hit', 'Glance', 'Hit', 'Active', 'Active', 'Crit', 'Active', 'Proc', 'Crit', 'DOT', 'Active', 'Dodge', 'Hit', 'Hit', 'Hit', 'Active', 'Crit', 'DOT', 'Hit', 'Hit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'DOT', 'Crit', 'Crit', 'Glance', 'Active', 'Hit', 'Active', 'Crit', 'Active', 'Glance', 'Hit', 'Hit', 'Active', 'Crit', 'DOT', 'Glance', 'Crit', 'Active', 'Hit', 'Hit', 'DOT', 'Hit', 'Dodge', 'Hit', 'Hit', 'Glance', 'Active', 'Crit', 'DOT', 'Glance', 'Hit', 'Crit', 'Active', 'Hit', 'Crit', 'Crit', 'Hit', 'Hit', 'Active', 'Glance', 'Active', 'Glance', 'DOT', 'Crit', 'Crit', 'Hit', 'Glance', 'Active', 'Proc', 'Crit', 'Active', 'Hit', 'DOT', 'Crit', 'Crit', 'Hit', 'Glance', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'Hit', 'Crit', 'Glance', 'Active', 'Miss', 'Active', 'Glance', 'Active', 'Crit', 'Crit', 'Active', 'Crit', 'Glance', 'Hit', 'Active', 'Crit', 'Active', 'Crit', 'DOT', 'Hit', 'Crit', 'Crit', 'Active', 'Glance', 'Active', 'Miss', 'DOT', 'Crit', 'Hit', 'Glance', 'Active', 'Hit', 'Active', 'Crit', 'DOT', 'Hit', 'Crit', 'Hit', 'Crit', 'Crit', 'Active', 'Hit', 'Active', 'Hit', 'DOT', 'Crit', 'Hit', 'Glance', 'Active', 'Crit', 'Active', 'Crit', 'DOT', 'Hit', 'Hit', 'Glance', 'Crit', 'Active', 'Crit', 'Active', 'Crit', 'DOT', 'Crit', 'Hit', 'Hit', 'Hit', 'Hit', 'Active', 'Crit', 'Active', 'Crit', 'Crit', 'Crit', 'Hit', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'DOT', 'Crit', 'Crit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'Miss', 'Crit', 'Crit', 'Crit', 'Crit', 'Active', 'Crit', 'DOT', 'Active', 'Hit', 'Crit', 'Hit', 'Hit', 'Active', 'Glance', 'Active', 'Miss', 'DOT', 'Hit', 'Hit', 'Hit', 'Active', 'Crit', 'Active', 'Crit', 'DOT', 'Hit', 'Hit', 'Miss', 'Dodge', 'Hit', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'Crit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'Hit', 'DOT', 'Crit', 'Hit', 'Hit', 'Glance', 'Hit', 'Active', 'Glance', 'Active', 'Glance', 'DOT', 'Crit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'DOT', 'Hit', 'Hit', 'Glance', 'Hit', 'Active', 'Glance', 'Active', 'Hit', 'DOT', 'Crit', 'Hit', 'Hit', 'Glance', 'Active', 'Hit', 'Active', 'Hit', 'DOT', 'Hit', 'Hit', 'Hit', 'Crit', 'Active', 'Miss', 'DOT', 'Crit', 'Crit', 'Miss', 'Active', 'Crit', 'Active', 'DOT', 'Crit', 'Crit', 'Hit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'Crit', 'DOT', 'Crit', 'Crit', 'Hit', 'Active', 'Crit', 'Active', 'Glance', 'Crit', 'Crit', 'Crit', 'Glance', 'Active', 'Hit', 'Active', 'DOT', 'DOT', 'Hit', 'Crit', 'Dodge', 'Glance', 'Active', 'Hit', 'Active', 'Glance', 'Hit', 'Hit', 'Glance', 'Glance', 'Active', 'Proc', 'Crit', 'Active', 'Crit', 'Proc', 'DOT', 'Crit', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'Miss', 'DOT', 'Active', 'Hit', 'Hit', 'Hit', 'Hit', 'Active', 'DOT', 'Crit', 'Hit', 'Dodge', 'Active', 'Crit', 'Active', 'Glance', 'DOT', 'Hit', 'Dodge', 'Glance', 'Crit', 'Active', 'Glance', 'DOT', 'Crit', 'Hit', 'Hit', 'Hit', 'Active', 'Crit', 'Active', 'Hit', 'DOT', 'Crit', 'Crit', 'Dodge', 'Hit', 'Active', 'Proc', 'Hit', 'Active', 'DOT', 'Crit', 'Crit', 'Glance', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'Crit', 'Crit', 'Active', 'Active', 'Hit', 'Active', 'Crit', 'DOT', 'Hit', 'Crit', 'Active', 'Glance', 'DOT', 'Hit', 'Active', 'Crit', 'Crit', 'Active', 'Crit', 'Active', 'Crit', 'DOT', 'Crit', 'Dodge', 'Active', 'Hit', 'Active', 'DOT', 'Hit', 'Hit', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'Hit', 'Hit', 'Active', 'Crit', 'DOT', 'Active', 'Glance', 'Active', 'Hit', 'Hit', 'Crit', 'Active', 'Glance', 'Active', 'Miss', 'DOT', 'Hit', 'Hit', 'Active', 'DOT', 'Miss', 'Crit', 'Active', 'Glance', 'DOT', 'Crit', 'Crit', 'Active', 'Hit', 'Active', 'Glance', 'DOT', 'Hit', 'Crit', 'Active', 'Hit', 'Active', 'Crit', 'Crit', 'Active', 'Glance', 'Active', 'Crit', 'DOT', 'Hit', 'Crit', 'Active', 'Hit', 'Active', 'Crit', 'Proc', 'DOT', 'Hit', 'Crit', 'Active', 'Hit', 'Active', 'Crit', 'DOT', 'Hit', 'Crit', 'Active', 'Hit', 'Active', 'DOT', 'Active', 'Hit', 'Active', 'Crit', 'DOT', 'Miss', 'Crit', 'Active', 'Crit', 'Hit', 'Active', 'Dodge', 'DOT', 'Crit', 'Crit', 'Active', 'Glance', 'Active', 'Miss', 'DOT', 'Hit', 'Crit']
     
     rotation = data_rot
-    #rotation = dash_all_data["content_dps_results_rotation"] #database 1 (version 2)
-    # rotation = rotation.to_list() #database 1 (version 2)
-    # rotation = str(rotation)
-    # rotation = rotation[2:-2]
-    # rotation = rotation.replace("\\", "")
-    # rotation = ast.literal_eval(rotation)
-
     rotation_time = data_time
-    #rotation_time = dash_all_data["content_dps_results_rotation_time"] #database 1 (version 2)
-    # rotation_time = rotation_time.to_list() #database 1 (version 2)
-    # rotation_time = str(rotation_time)
-    # rotation_time = rotation_time[2:-2]
-    # rotation_time = ast.literal_eval(rotation_time)
-
     rotation_damage = data_dam
-    #rotation_damage = dash_all_data["content_dps_results_rotation_damage"] #database 1 (version 2)
-    # rotation_damage = rotation_damage.to_list() #database 1 (version 2)
-    # rotation_damage = str(rotation_damage)
-    # rotation_damage = rotation_damage[2:-2]
-    # rotation_damage = ast.literal_eval(rotation_damage)
-
     rotation_status = data_sta
-    #rotation_status = dash_all_data["content_dps_results_rotation_status"] #database 1 (version 2)
-    # rotation_status = rotation_status.to_list() #database 1 (version 2)
-    # rotation_status = str(rotation_status)
-    # rotation_status = rotation_status[2:-2]
-    # rotation_status = ast.literal_eval(rotation_status)
-
-
-
     all_data = pd.DataFrame()
     all_data2 = pd.DataFrame()
     ability_order = rotation
@@ -191,64 +164,6 @@ def all_dash_stuff():
         unique_damage_per_cast_df_table.append(round((sum(search_data['Damage'])) / len(search_data['Damage']), 4))
         unique_damage_df_table.append(round(sum(search_data['Damage']), 4))
         unique_ability_df_table.append(i)
- #   status_table_data = pd.DataFrame(dict(Ability=unique_ability_df_table, Miss=unique_miss_count_df_table, Dodge=unique_dodge_count_df_table, Parry=unique_parry_count_df_table, Glance=unique_glance_count_df_table, Block=unique_block_count_df_table, Crit=unique_crit_count_df_table, Hit=unique_hit_count_df_table, DOT=unique_dot_count_df_table, Active=unique_active_count_df_table, Proc=unique_proc_count_df_table, Avg_Damage=unique_damage_per_cast_df_table, All_Damage=unique_damage_df_table))
-
-
-    # statuss_sum_list = ["Miss", "Dodge", "Parry", "Glance", "Block", "Crit", "Hit", "DOT", "Active", "Proc"]
-    # status_table_data['Sum'] = status_table_data[statuss_sum_list].sum(axis=1)
-    # status_table_data['MissP'] = status_table_data["Miss"]/status_table_data["Sum"]
-    # status_table_data['DodgeP'] = status_table_data["Dodge"]/status_table_data["Sum"]
-    # status_table_data['ParryP'] = status_table_data["Parry"]/status_table_data["Sum"]
-    # status_table_data['GlanceP'] = status_table_data["Glance"]/status_table_data["Sum"]
-    # status_table_data['BlockP'] = status_table_data["Block"]/status_table_data["Sum"]
-    # status_table_data['CritP'] = status_table_data["Crit"]/status_table_data["Sum"]
-    # status_table_data['HitP'] = status_table_data["Hit"]/status_table_data["Sum"]
-    # status_table_data['DOTP'] = status_table_data["DOT"]/status_table_data["Sum"]
-    # status_table_data['ActiveP'] = status_table_data["Active"]/status_table_data["Sum"]
-    # status_table_data['ProcP'] = status_table_data["Proc"]/status_table_data["Sum"]
-    # status_table_data['MissP'] = status_table_data['MissP'].apply(lambda x: x * 100)
-    # status_table_data['DodgeP'] = status_table_data['DodgeP'].apply(lambda x: x * 100)
-    # status_table_data['ParryP'] = status_table_data['ParryP'].apply(lambda x: x * 100)
-    # status_table_data['GlanceP'] = status_table_data['GlanceP'].apply(lambda x: x * 100)
-    # status_table_data['BlockP'] = status_table_data['BlockP'].apply(lambda x: x * 100)
-    # status_table_data['CritP'] = status_table_data['CritP'].apply(lambda x: x * 100)
-    # status_table_data['HitP'] = status_table_data['HitP'].apply(lambda x: x * 100)
-    # status_table_data['DOTP'] = status_table_data['DOTP'].apply(lambda x: x * 100)
-    # status_table_data['ActiveP'] = status_table_data['ActiveP'].apply(lambda x: x * 100)
-    # status_table_data['ProcP'] = status_table_data['ProcP'].apply(lambda x: x * 100)
-    # status_table_data = status_table_data.round({'MissP': 2, 'DodgeP': 2, 'ParryP': 2, 'GlanceP': 2, 'BlockP': 2, 'CritP': 2, 'HitP': 2, 'DOTP': 2, 'ActiveP': 2, 'ProcP': 2})
-    # status_table_data['MissP'] = status_table_data['MissP'].astype(str) + '%'
-    # status_table_data['DodgeP'] = status_table_data['DodgeP'].astype(str) + '%'
-    # status_table_data['ParryP'] = status_table_data['ParryP'].astype(str) + '%'
-    # status_table_data['GlanceP'] = status_table_data['GlanceP'].astype(str) + '%'
-    # status_table_data['BlockP'] = status_table_data['BlockP'].astype(str) + '%'
-    # status_table_data['CritP'] = status_table_data['CritP'].astype(str) + '%'
-    # status_table_data['HitP'] = status_table_data['HitP'].astype(str) + '%'
-    # status_table_data['DOTP'] = status_table_data['DOTP'].astype(str) + '%'
-    # status_table_data['ActiveP'] = status_table_data['ActiveP'].astype(str) + '%'
-    # status_table_data['ProcP'] = status_table_data['ProcP'].astype(str) + '%'
-    # status_table_data['DPSPA'] = status_table_data["All_Damage"].apply(lambda x: x / fight_length)
-    # status_table_data = status_table_data.round({'DPSPA': 3})
-
-    # dps_timeline_breaks = int(fight_length / 3)
-    # time_each_break = fight_length / dps_timeline_breaks
-    # time_breaks = []
-    # timeline_dps_list = []
-    # for times in range(0, dps_timeline_breaks):
-    #     times += 1
-    #     timeline_current_time = times * time_each_break
-    #     time_breaks.append(times * time_each_break)
-    #     timeline_dps_num = []
-    #     for timeline_time_position, timeline_time in enumerate(timeline_order):
-    #         if timeline_time < timeline_current_time:
-    #             timeline_dps_num.append(timeline_time_position)
-    #     timeline_damage_list = []
-    #     for timeline_damage in timeline_dps_num:
-    #         timeline_damage_list.append(damage_order[timeline_damage])
-    #     timeline_damage = sum(timeline_damage_list)
-    #     timeline_dps = timeline_damage / timeline_current_time
-    #     timeline_dps_list.append(timeline_dps)
-    # dps_table_data = pd.DataFrame(dict(DPS=timeline_dps_list, Time=time_breaks))
 
 
 
@@ -299,28 +214,24 @@ def all_dash_stuff():
               'Glance': '#80201B',
               'Block': '#40100D',
               }
-    fig = px.timeline(all_data,x_start="Start", x_end="Finish", y="Ability", color="Ability",opacity=1, color_discrete_map=colors, hover_data=["Status", "Damage"], template="plotly_dark")
-    fig.update_layout(xaxis=dict(
-                          title='Timeline',
-                          linecolor = "#BCCCDC",
-                          showgrid=False,
-                          tickformat = '%H:%M:%S',
-                                      ),
-                            yaxis=dict(
-                            title=None,
-                            linecolor="#BCCCDC",
-                            showgrid=False,
-                            ))
-    # t_dps = fight_length
-    # total_damage = round(sum(damage_order), 3)
-    # total_dps = round((t_damage / t_dps), 3)
-    # total_damage = "Total Damage Done - " + str(total_damage) + "                  DPS - " + str(total_dps) + "                  Fight Length - " + str(fight_length) + "                  Number of Targets - " + str(number_of_targets_in_fight)
-    fig.update_layout(
-        hoverlabel=dict(
-            font_size=12,
-            font_family="Rockwell",
-        )
-    )
+    # fig = px.timeline(all_data,x_start="Start", x_end="Finish", y="Ability", color="Ability",opacity=1, color_discrete_map=colors, hover_data=["Status", "Damage"], template="plotly_dark")
+    # fig.update_layout(xaxis=dict(
+    #                       title='Timeline',
+    #                       linecolor = "#BCCCDC",
+    #                       showgrid=False,
+    #                       tickformat = '%H:%M:%S',
+    #                                   ),
+    #                         yaxis=dict(
+    #                         title=None,
+    #                         linecolor="#BCCCDC",
+    #                         showgrid=False,
+    #                         ))
+    # fig.update_layout(
+    #     hoverlabel=dict(
+    #         font_size=12,
+    #         font_family="Rockwell",
+    #     )
+    # )
     all_data_no_zero = all_data.copy()
     all_data_no_zero = all_data_no_zero[all_data_no_zero.Damage != 0]
     fig3 = px.treemap(all_data, path=[px.Constant("All Damage"),'Ability', 'Status'], values='Damage',color="Ability",color_discrete_map=colors, template="plotly_dark")
@@ -336,12 +247,12 @@ def all_dash_stuff():
 
 
     return html.Div(children=[
-        html.Div([
-            dcc.Graph(
-                id='graph1',
-                figure=fig
-            ),
-        ]),
+        # html.Div([
+        #     dcc.Graph(
+        #         id='graph1',
+        #         figure=fig
+        #     ),
+        # ]),
         html.Div([
             dcc.Graph(
                 id='graph3',
