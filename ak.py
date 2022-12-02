@@ -20,9 +20,9 @@ import pytz
 app = Flask(__name__)
 
 @app.route("/")
-def mode_page():
+def main_page():
     return render_template('main.html')
 
 @app.route("/dkexample/")
-def mode_page():
+def dkgear_page():
     return render_template('dkgearexample.html')
