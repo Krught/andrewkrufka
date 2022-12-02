@@ -98,7 +98,7 @@ button:focus
 }
 
 #aboutmephoto {
-  background-image: url('/aboutme.jfif'); 
+  background-image: url('/static/images/aboutme.jfif'); 
   background-repeat: no-repeat;  
   background-attachment: fixed;
   background-size: 100% 100%;
