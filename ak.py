@@ -45,32 +45,32 @@ def all_dash_stuff():
     
     rotation = data_rot
     #rotation = dash_all_data["content_dps_results_rotation"] #database 1 (version 2)
-    rotation = rotation.to_list() #database 1 (version 2)
-    rotation = str(rotation)
-    rotation = rotation[2:-2]
-    rotation = rotation.replace("\\", "")
-    rotation = ast.literal_eval(rotation)
+    # rotation = rotation.to_list() #database 1 (version 2)
+    # rotation = str(rotation)
+    # rotation = rotation[2:-2]
+    # rotation = rotation.replace("\\", "")
+    # rotation = ast.literal_eval(rotation)
 
     rotation_time = data_time
     #rotation_time = dash_all_data["content_dps_results_rotation_time"] #database 1 (version 2)
-    rotation_time = rotation_time.to_list() #database 1 (version 2)
-    rotation_time = str(rotation_time)
-    rotation_time = rotation_time[2:-2]
-    rotation_time = ast.literal_eval(rotation_time)
+    # rotation_time = rotation_time.to_list() #database 1 (version 2)
+    # rotation_time = str(rotation_time)
+    # rotation_time = rotation_time[2:-2]
+    # rotation_time = ast.literal_eval(rotation_time)
 
     rotation_damage = data_dam
     #rotation_damage = dash_all_data["content_dps_results_rotation_damage"] #database 1 (version 2)
-    rotation_damage = rotation_damage.to_list() #database 1 (version 2)
-    rotation_damage = str(rotation_damage)
-    rotation_damage = rotation_damage[2:-2]
-    rotation_damage = ast.literal_eval(rotation_damage)
+    # rotation_damage = rotation_damage.to_list() #database 1 (version 2)
+    # rotation_damage = str(rotation_damage)
+    # rotation_damage = rotation_damage[2:-2]
+    # rotation_damage = ast.literal_eval(rotation_damage)
 
     rotation_status = data_sta
     #rotation_status = dash_all_data["content_dps_results_rotation_status"] #database 1 (version 2)
-    rotation_status = rotation_status.to_list() #database 1 (version 2)
-    rotation_status = str(rotation_status)
-    rotation_status = rotation_status[2:-2]
-    rotation_status = ast.literal_eval(rotation_status)
+    # rotation_status = rotation_status.to_list() #database 1 (version 2)
+    # rotation_status = str(rotation_status)
+    # rotation_status = rotation_status[2:-2]
+    # rotation_status = ast.literal_eval(rotation_status)
 
 
 
