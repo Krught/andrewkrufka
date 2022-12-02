@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Andrew Krufka - Data Analyst</title>
+<link rel="stylesheet" href="style2.css">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/TweenLite.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/CSSPlugin.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+
+
+
+<div class="slides-container">
+    <div class="slide" id="slide-1">
+        <div class="centered">
+			<h1>World of Warcraft Death Knight Gearing Simulation</h1>
+			<p>Inital Question:</p>
+			<p>Which one of these 2 items should I use?</p>
+			<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			/* Create two equal columns that floats next to each other */
+			.column {
+			  float: left;
+			  width: 50%;
+			  padding: 10px;
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			.column2 {
+			  float: left;
+			  width: 50%;
+			  padding: 10px;
+			}
+
+			/* Clear floats after the columns */
+			.row2:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			</style>
+
+			
+			
+			<div class="row">
+				<div class="column"style="text-align: center; font-size: 20px">
+					<img src="ad.png" alt="Angry Dread Photo" width="500">
+				</div>
+				<div class="column"style="text-align: center; font-size: 20px">
+					<img src="ll.png" alt="Last Laugh Photo" width="420">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column"style="text-align: center; font-size: 20px">
+					<div>
+					<img src="dkss.png" alt="About Me Photo" width="500">
+					</div>
+				</div>
+				<div class="column"style="text-align: center; font-size: 20px">
+            <p>Now, even though we only changed one single variable between the two simulations (that being either the weapon Angry Dread or Last Laugh), we can see that mulitple different sub-variables are changed including the damage range, attack speed, agility and strength, along with multiple other items.</p>
+
+			<p>More Text</p>
+
+			<p>Nitty Gritty</p>
+					
+				</div>
+			</div>
+			<p>Now to conclude this example, I have to point out a major factor of a simulation and why this data isn't 100% accurate.  For simplicities sake, this data was all pulled from one simulation, which mean that in one of the examples you could of 'high-rolled' RNG (random number generation) and in another you could have very bad luck.  To briefly explain that, inside a simulation, and also inside the game, an item might have a range of damage from say 1 to 100.  And in one example luck could be on your side, and you only roll 99's and 100's; but in another example you might have no luck and roll a few 1's and 2's which would greatly affect you damage done.</p>
+			<p></p>
+			<p>Link to Dynamic Data Used:</p>
+			<p>Enter Username as either 'Souled' or 'Souled2' to see either dataset.</p>
+		</div>
+		<div>
+			<iframe src="https://www.remourtech.com/dash/" style="border: 0pt none ; width: 100vw; height: 800px;" scrolling="yes"></iframe>
+			<div style="text-align: center">
+			<p><a href="https://www.remourtech.com/" target="_blank" style="centered">Link to my Simulator used to create the data.</a></p>
+			<p><a href="https://www.remourtech.com/dash/" target="_blank" style="centered">Link to my data analyser used to map the data.</a></p>
+			</div>
+		</div>
+
+</body>
+<script>
+</script>
+</html>
