@@ -370,9 +370,6 @@ def all_angrydread_stuff():
 
 
 
-    #Extra future stuff
-    future_extra_sim_stats_info = dash_all_data["content_extra_future_stats_area"] #database 1 (version 2)
-    future_extra_sim_stats_info = future_extra_sim_stats_info.to_string(index = False) #database 1 (version 2)
 
 
     # dash_all_data = dash_all_data.to_string(index = False)
@@ -1190,9 +1187,6 @@ def all_lastlaugh_stuff():
 
 
 
-    #Extra future stuff
-    future_extra_sim_stats_info = dash_all_data["content_extra_future_stats_area"] #database 1 (version 2)
-    future_extra_sim_stats_info = future_extra_sim_stats_info.to_string(index = False) #database 1 (version 2)
 
 
     # dash_all_data = dash_all_data.to_string(index = False)
