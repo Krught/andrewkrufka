@@ -58,11 +58,6 @@ button:focus
     overflow: auto;
 }
 
-.slide .centered {
-    width: 60%;
-    margin: 200px auto 0;
-}
-
 .slide .centered h1 {
     text-align: center;
 }
