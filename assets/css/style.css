@@ -141,6 +141,10 @@ height: 100vh;
   background-color: #1A9FD7;
 }
 
+.box6 {
+  background-color: #4F1919;
+}
+
 #targets {
   position: absolute;
   width: 500%;
