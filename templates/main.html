@@ -9,6 +9,7 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/TweenLite.min.js"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/CSSPlugin.min.js"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.6/plugins/ScrollToPlugin.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -84,10 +85,78 @@
     <div class="slide" id="slide-3">
         <div class="centered">
             <h1>Work Example</h1>
-			<p><a href="https://www.AndrewKrufka.com/dkexample/"style="centered">World of Warcraft DK Gearing Example</a></p>
-			<p><a href="https://docs.google.com/spreadsheets/d/18GSO4LstH1YgbYvqaKJCpzzdh5Uol132Q3zI12FSXLg/edit?usp=sharing"style="centered">Portfolio Market Breakdown Visualization</a></p>
-			<p><a href="https://docs.google.com/spreadsheets/d/1AGDT1Fs5hznZY-x15eZuQOZEZJJW-3Xcb09WXlobHuw/edit?usp=sharing"style="centered">World of Warcraft Raid Loot Visualization</a></p>
-        </div>
+		</div>
+		<div id="scrollgroup">
+			<div id="scroll1" class="box box1">
+					<svg  class="go-nexts" width="32" height="55">
+					<polyline points="3 3 30 28 3 53"></polyline>
+				 	</svg>
+				<center><p><a href="https://www.AndrewKrufka.com/dkexample/"style="centered">World of Warcraft DK Gearing Example - Click Here</a></p></center>
+            	<center><iframe src="https://www.AndrewKrufka.com/dkexample/" style="width: 70vw; height: 30vw;"></iframe></center>
+			</div>
+			<div id="scroll2" class="box box2">
+				  <svg  class="go-nexts" width="32" height="55">
+					<polyline points="3 3 30 28 3 53"></polyline>
+				 	</svg>
+
+				  <svg  class="go-prevs" width="32" height="55">
+					<polyline points="28 3 3 28 28 53"></polyline>
+				  </svg> 
+				<center><p><a href="https://docs.google.com/spreadsheets/d/18GSO4LstH1YgbYvqaKJCpzzdh5Uol132Q3zI12FSXLg/edit?usp=sharing"style="centered">Portfolio Market Breakdown Visualization</a></p></center>
+            	<center><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS87qsGE2cAET5H9woSUUIr9jP43pMtpfnLeLz_RxhymKWMiDXElI7d8sLIorDDuAoisQe9XWdp4VHG/pubhtml?widget=true&amp;headers=false" style="width: 70vw; height: 30vw;"></iframe></center>
+			</div>
+			<div id="scroll3" class="box box3">
+<!--
+					   <svg  class="go-nexts" width="32" height="55">
+					<polyline points="3 3 30 28 3 53"></polyline>
+				  </svg>
+-->
+
+				  <svg  class="go-prevs" width="32" height="55">
+					<polyline points="28 3 3 28 28 53"></polyline>
+				  </svg> 
+				<center><p><a href="https://docs.google.com/spreadsheets/d/1AGDT1Fs5hznZY-x15eZuQOZEZJJW-3Xcb09WXlobHuw/edit?usp=sharing"style="centered">World of Warcraft Raid Loot Visualization</a></p></center>
+            	<center><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vROx7IyKi0Uv55fpTE8DnWJgFO6TgTT74wTwSztPmLNpmkocqmudKCWOkc4zIVRxVhVyBXdX-VdT9Hk/pubhtml?widget=true&amp;headers=false" style="width: 70vw; height: 30vw;"></iframe></center>
+			</div>
+			<!--
+			<div id="scroll4" class="box box4">
+				4
+					   <svg  class="go-nexts" width="32" height="55">
+					<polyline points="3 3 30 28 3 53"></polyline>
+				  </svg>
+
+				  <svg  class="go-prevs" width="32" height="55">
+					<polyline points="28 3 3 28 28 53"></polyline>
+				  </svg> 
+			</div>
+			<div id="scroll5" class="box box5">
+				5
+				  <svg  class="go-prevs" width="32" height="55">
+					<polyline points="28 3 3 28 28 53"></polyline>
+				  </svg> 
+			</div>
+			
+-->
+		</div>
+			
+
+		
+	
+		<!--
+		
+		giffs possibly?
+
+possible show images on the gearing example
+both visualizations
+
+
+possibly show screenshots of other stuff, so the market lookup script
+and possibly the google docs script to auto pull data in -->
+		
+		
+		
+		
+
     </div>
     <div class="slide" id="slide-4">
         <div class="centered">
@@ -110,6 +179,31 @@
 
 </body>
 <script>
+var scrollnum = 0;
+$( ".go-nexts" ).click(function() {
+	scrollnum = scrollnum + 1;
+	var scrolltext = "scroll" + scrollnum;
+	document.getElementById(scrolltext).hidden = true;
+	var unhidescrollnum = scrollnum + 1;
+	scrolltext = "scroll" + unhidescrollnum;
+	document.getElementById(scrolltext).hidden = false;
+	var elementc = document.getElementById("slide-3");
+	var elementcs = document.getElementById(scrolltext);
+	var cst = window.getComputedStyle(elementcs, null).getPropertyValue('background-color');
+    elementc.style.backgroundColor = cst;
+});
+$( ".go-prevs" ).click(function() {
+	var scrolltext = "scroll" + scrollnum;
+	document.getElementById(scrolltext).hidden = false;
+	scrollnum = scrollnum - 1;
+	document.getElementById(scrolltext).hidden = false;
+	var elementc = document.getElementById("slide-3");
+	var elementcs = document.getElementById(scrolltext);
+	var cst = window.getComputedStyle(elementcs, null).getPropertyValue('background-color');
+    elementc.style.backgroundColor = cst;
+});
+	
+	//Everything works below this
 	
 //First the variables our app is going to use need to be declared
 
